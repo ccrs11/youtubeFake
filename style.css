@@ -1,0 +1,140 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: 24vw 24vw 24vw 24vw;
+    grid-template-rows: 5vw;
+    gap: 10px;
+    /* background-color: #2196F3; */
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 1px 0;
+}
+.logo{
+  grid-row:1/2;
+  grid-column:1/2;
+  width:100%;
+  height:100%
+}
+.buscador{
+    grid-row:1/2;
+    grid-column:2/5;
+    width: 80%;
+    height: 100%;
+    padding-top: 0.5rem;
+    /* width: 50vw; */
+    display: block;
+    margin: 0 auto;
+}/* 
+.search-container{
+  padding-top: 1.5rem;
+  width: 50vw;
+  display: block;
+  margin: 0 auto;
+} */
+
+.video {
+  grid-row:2/6;
+  grid-column:1/4;
+  height:30rem;
+}
+.nombreCanal{
+  grid-row:2/3;
+  grid-column: 4/5;
+}
+.nombreCanal>div{
+  display: flex;
+  flex-direction: row;
+}
+.comentarios {
+    grid-row:3/7;
+    grid-column:4/5;
+    padding: 10px;
+    flex-direction: column;
+    overflow: auto;
+    height: 500px;
+    
+}
+.comentarios>div{
+  display: flex;
+  flex-direction: row;
+  padding: 2px;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+.comentarios>div>p{
+  font-size: small;
+}
+.nombreVideo{
+  grid-row:6/7;
+  grid-column:1/4;
+}
+.relatedV {
+    grid-row:7/8;
+    grid-column:1/4;
+    height:7rem;
+    display: flex;
+}
+.relatedV>iframe{
+  display: flex;
+  flex-direction: row;
+  overflow-x: scroll;
+}
+.descripcion{
+    grid-row:7/8;
+    grid-column:4/5;
+    height: 150px;
+    overflow: scroll;
+}
+
+#logo{
+  height: 7rem;
+  float: left;
+}
+
+/* css buscador */
+/* .buscador{
+  padding-top: 1rem;
+} */
+
+input#search-bar{
+  margin: 0 auto;
+  width: 100%;
+  height: 80%;
+  padding: 0 20px;
+  font-size: 1rem;
+  border: 1px solid #D0CFCE;
+  outline: none;
+   &:focus{
+    border: 1px solid #008ABF;
+    transition: 0.35s ease;
+    color: #008ABF;
+    &::-webkit-input-placeholder{
+      transition: opacity 0.45s ease; 
+    opacity: 0;
+    }
+    &::-moz-placeholder {
+      transition: opacity 0.45s ease; 
+    opacity: 0;
+    }
+    &:-ms-placeholder {
+    transition: opacity 0.45s ease; 
+    opacity: 0;
+    }    
+  }
+}
+
+.search-icon{
+  position: relative;
+  float: right;
+  width: 75px;
+  height: 75px;
+  top: -62px;
+  right: -45px;
+}
+
+/* OTHER CSS */
+
